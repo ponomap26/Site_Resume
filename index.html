@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <meta charset="utf-8">
+    <!--    <meta name="viewport" content="width=device-width, initial-scale=1">-->
+    <title>Заголовок моей страницы</title>
+    <link rel="stylesheet" href="style.css">
+
+<body>
+
+<!-- Вот наш главный заголовок, который используется на всех страницах нашего веб-сайта -->
+<header class="header">
+    <div class="myres">
+        <h1> Пономарев Константин</h1>
+
+    </div>
+    <nav class="navigation">
+        <ul>
+            <li><a href="#section-2">"Кто Я"</a></li>
+            <li><a href="#section-3">Раздел 2</a></li>
+            <li><a href="#section-4">Раздел 3</a></li>
+            <li><a href="#section-5">Мои Скиллы</a></li>
+        </ul>
+    </nav>
+    <div class="img">
+        <!-- Здесь находится изображение -->
+        <img src="myfoto.jpg" alt="мое фото" class="profile-pic">
+    </div>
+
+</header>
+
+<!-- Здесь основное содержимое нашей страницы -->
+<main class="grid-wrapper main">
+    <div class="grid-item main__article">
+
+        <!-- Она содержит статью -->
+
+        <h2 id="section-2">Войти в IT</h2>
+        <button class="kinopoisk-button" onclick="location.href = 'https://www.kinopoisk.ru/film/779602/'"></button>
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Donec a diam lectus. Set sit amet ipsum mauris.
+            Maecenas congue ligula as quam viverra nec consectetur ant hendrerit. Donec et mollis dolor. Praesent et
+            diam eget libero egestas mattis sit amet vitae augue. Nam tincidunt congue enim, ut porta lorem lacinia
+            consectetur .</p>
+        <h3 id="section-3">Подраздел</h3>
+        <p>Donec ut librero sed accu vehicula ultricies a non tortor. Lorem ipsum dolor sit amet, consectetur
+            adipisicing elit. Aenean ut gravida lorem. Ut turpis felis, pulvinar a semper sed, adipiscing id
+            dolor.</p>
+        <p>Pelientesque auctor nisi id magna consequat sagittis. Curabitur dapibus, enim sit amet elit pharetra
+            tincidunt feugiat nist imperdiet. Ut convallis libero in urna ultrices accumsan. Donec sed odio
+            eros.</p>
+        <h4 id="section-4">Ещё один подраздел</h4>
+        <p>Donec viverra mi quis quam pulvinar at malesuada arcu rhoncus. Cum soclis natoque penatibus et manis dis
+            parturient montes, nascetur ridiculus mus. In rutrum accumsan ultricies. Mauris vitae nisi at sem
+            facilisis semper ac in est.</p>
+        <p>Vivamus fermentum semper porta. Nunc diam velit, adipscing ut tristique vitae sagittis vel odio. Maecenas
+            convallis ullamcorper ultricied. Curabitur ornare, ligula semper consectetur sagittis, nisi diam iaculis
+            velit, is fringille sem nunc vet mi.</p>
+
+        <div class="grid-item main__article3">
+            <h2 id="section-6">ЕЩЕ что то</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Donec a diam lectus. Set sit amet ipsum mauris.
+                Maecenas congue ligula as quam viverra nec consectetur ant hendrerit. Donec et mollis dolor. Praesent et
+                diam eget libero egestas mattis sit amet vitae augue. Nam tincidunt congue enim, ut porta lorem lacinia
+                consectetur.</p>
+            <div>
+
+
+                <div class="grid-item main__aside">
+
+                    <!-- Дополнительный контент также может быть вложен в основной контент -->
+                    <aside>
+                        <h2>Мои ресурсы</h2>
+                        <ul>
+                            <li><a href="https://github.com/ponomap26" target="_blank">Мой GitHub </a></li>
+                            <li><a href="https://samara.hh.ru/" target="_blank">Мой HeadHunter</a></li>
+                            <li><a href="#">Даже на севере Англии</a></li>
+                            <li><a href="#">Здесь не перестаёт дождь</a></li>
+                            <li><a href="#">Лаааадно...</a></li>
+                        </ul>
+                    </aside>
+                </div>
+
+</main>
+
+<button id="section-5" type="button" class="collapsible">МОИ СКИЛЛЫ(ТЫК)</button>
+<aside class="sidebar">
+    <p>HTML</p>
+
+    <div class="skills html">50%</div>
+    </div>
+
+    <p>CSS</p>
+    <div class="container">
+        <div class="skills css">50%</div>
+    </div>
+
+    <p>JavaScript</p>
+    <div class="container">
+        <div class="skills js">35%</div>
+    </div>
+
+    <p>Python</p>
+    <div class="container">
+        <div class="skills Python">60%</div>
+    </div>
+</aside>
+<script>
+    var coll = document.getElementsByClassName("collapsible");
+    var i;
+
+    for (i = 0; i < coll.length; i++) {
+        coll[i].addEventListener("click", function () {
+            this.classList.toggle("active");
+            var content = this.nextElementSibling;
+            if (content.style.display === "block") {
+                content.style.display = "none";
+            } else {
+                content.style.display = "block";
+            }
+        });
+    }
+</script>
+<!-- И вот наш главный нижний колонтитул, который используется на всех страницах нашего веб-сайта -->
+<footer class="footer">
+    <p>©Авторские права никому не принадлежат, 2023. Все права защищены.</p>
+</footer>
+
+</body>
+</html>
