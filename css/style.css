@@ -188,29 +188,25 @@ a {
 }
 
 
-/*Стили для изображения */
+
 .profile-pic {
-    max-width: 300px;
+    max-width: 200px;
     height: auto;
     border-radius: 50%;
     overflow: hidden;
     position: absolute;
-    top: 60px;
-    left: 30px;
+    top: 30px;
+    left: 40px;
 }
 
 .sidebar {
-    /*background-color: rgba(242, 242, 242, 3);*/
+
     padding: 20px;
     right: auto;
     font-size: 20px;
     margin-bottom: 40px;
 }
 
-/*.sidebar h5 {*/
-/*    font-size: 30px;*/
-/*    margin-bottom: 50px;*/
-/*}*/
 
 .sidebar ul {
     list-style-type: none;
@@ -238,7 +234,7 @@ a {
     background-color: #f44336;
 }
 
-/* Red */
+
 .Python {
     width: 60%;
     background-color: #3dd313;
@@ -251,7 +247,7 @@ a {
 
 }
 
-/*Медиа-запрос для адаптивности */
+
 @media only screen and (max-width: 300px) {
     .profile-pic {
         float: none; /* убрать плавание */
