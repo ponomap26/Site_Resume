@@ -12,11 +12,11 @@ body {
     display: block;
     clear: both;
 
-    color: lightsteelblue; /* изменение цвета текста в заголовке */
-    text-align: center; /* выравнивание текста по центру */
-    padding-top: 20px; /* добавление верхнего отступа тексту в заголовке */
+    color: lightsteelblue;
+    text-align: center;
+    padding-top: 20px;
     position: relative;
-    height: 200px; /* добавление высоты к родительскому элементу */
+    height: 160px;
 }
 
 .navigation {
@@ -43,13 +43,15 @@ body {
 .navigation a:hover {
     text-decoration: underline;
 }
-
+.section{
+    font-size: 30px;
+}
 .myres {
     color: black;
     width: 100%;
     margin: 0 auto;
     clear: left;
-    text-align: center; /* выравнивание текста по центру */
+    text-align: center;
 }
 
 ul {
@@ -156,39 +158,33 @@ a {
 }
 
 .kinopoisk-button {
-    background-color: #c4a1ba;
-    color: #1a1818;
-    border: none;
-    border-radius: 20px;
-    padding: 20px 40px;
-    font-size: 16px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
     position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 180px; /* увеличиваем ширину кнопки */
+    height: 80px; /* увеличиваем высоту кнопки */
+    background-color: transparent;
 }
 
 .kinopoisk-button::before {
     content: "";
     display: block;
     position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    left: 0px;
-    width: 100px;
-    height: 40px;
-    background-image: url("../image/logo.jpg"); /* замените путь на путь к своему логотипу */
+    top: 0;
+    left: 0;
+    width: 180px; /* увеличиваем ширину логотипа */
+    height: 80px; /* увеличиваем высоту логотипа */
+    background-image: url("../image/logo.jpg");
     background-size: cover;
     background-position: center;
+    opacity: 0.5;
+    z-index: -1;
 }
 
-.kinopoisk-button span {
-    display: inline-block;
-    vertical-align: middle;
-    margin-left: 100px;
-}
-
-.kinopoisk-button:hover {
-    background-color: #a1728f;
+.kinopoisk-button:hover::before {
+    opacity: 1;
 }
 
 
@@ -199,7 +195,7 @@ a {
     border-radius: 50%;
     overflow: hidden;
     position: absolute;
-    top: 30px;
+    top: 60px;
     left: 30px;
 }
 
